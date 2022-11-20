@@ -1,0 +1,128 @@
+/* === GLOBAL STYLES === */
+
+/* == CSS variables == */
+
+:root {
+  --main-color: #000000;
+  --second-color: #231f20;
+  --reverse-color: #ffffff;
+  --accent-color: #f7941e;
+  --use-color: #9ef716;
+}
+
+/* == Global styles reset == */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ul */
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* buttons */
+
+.btn {
+  cursor: pointer;
+}
+
+/* img */
+
+.image {
+  display: block;
+  max-height: 100%;
+}
+
+/* a */
+
+.link {
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+/* input,
+textarea {
+  outline: none;
+} */
+
+body {
+  /* font-family: 'Homemade Apple', cursive; */
+  font-family: "Roboto Serif", serif;
+  /* width: 1440px; */
+}
+
+/* Container */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* === HEADER === */
+
+.page-header {
+/* position: fixed; */
+
+  height: 116px;
+  /* padding-left: 80px;
+  padding-right: 34px; */
+  /* margin-right: auto;
+  margin-left: auto; */
+
+  /* background-color: var(--use-color); */
+  outline: 1px solid blue;
+}
+
+.header-container {
+  position: relative;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.logo-link {
+position: absolute;
+top: 39px;
+left: 80px;
+ }
+
+.main-nav {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-right: 371px; */
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.main-menu-item {
+  margin-right: 31px;
+}
+
+.main-menu-item:last-child {
+  margin-right: 0;
+}
