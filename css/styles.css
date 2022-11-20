@@ -76,39 +76,32 @@ body {
 /* === HEADER === */
 
 .page-header {
-/* position: fixed; */
+  display: flex;
+  align-items: center;
 
   height: 116px;
-  /* padding-left: 80px;
-  padding-right: 34px; */
-  /* margin-right: auto;
-  margin-left: auto; */
 
-  /* background-color: var(--use-color); */
+  background-color: var(--use-color);
   outline: 1px solid blue;
 }
 
 .header-container {
   position: relative;
 
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
-.logo-link {
-position: absolute;
-top: 39px;
-left: 80px;
- }
-
-.main-nav {
-
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  /* margin-right: 371px; */
+.logo-link {
+  position: absolute;
+  left: 80px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-menu {
@@ -117,12 +110,15 @@ left: 80px;
   align-items: center;
 }
 
-
-
 .main-menu-item {
   margin-right: 31px;
 }
 
 .main-menu-item:last-child {
   margin-right: 0;
+}
+
+.btn-gift-finder {
+  position: absolute;
+  right: 34px;
 }
