@@ -7,6 +7,7 @@
   --second-color: #231f20;
   --reverse-color: #ffffff;
   --accent-color: #f7941e;
+  --main-background-color: #fafafa;
   --use-color: #9ef716;
 }
 
@@ -81,8 +82,7 @@ body {
 
   height: 116px;
 
-  background-color: var(--use-color);
-  outline: 1px solid blue;
+  background-color: var(--main-background-color);
 }
 
 .header-container {
@@ -96,12 +96,13 @@ body {
 .logo-link {
   position: absolute;
   left: 80px;
-}
 
-.main-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "Homemade Apple";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(39 / 18);
+
+  color: var(--second-color);
 }
 
 .main-menu {
@@ -118,7 +119,29 @@ body {
   margin-right: 0;
 }
 
+.main-menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  color: #000000;
+}
+
 .btn-gift-finder {
   position: absolute;
   right: 34px;
+
+  width: 150px;
+  height: 43.5px;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+  background-color: transparent;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
 }
