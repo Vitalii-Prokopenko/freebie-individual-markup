@@ -8,7 +8,7 @@
   --reverse-color: #ffffff;
   --accent-color: #f7941e;
   --main-background-color: #fafafa;
-  --second-background-color: #F1F1F2;
+  --second-background-color: #f1f1f2;
   --use-color: #9ef716;
 }
 
@@ -205,4 +205,114 @@ body {
   background-color: var(--accent-color);
   border-radius: 5px;
   border-color: transparent;
+}
+
+/* === SECTION FEATURE === */
+
+.feature-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.feature-description {
+  padding-left: 112px;
+  padding-top: 164px;
+  width: 719px;
+
+  background-color: var(--second-background-color);
+}
+
+.feature-heading {
+  margin-bottom: 23px;
+  width: 441px;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(45 / 32);
+
+  color: var(--main-color);
+}
+
+.feature-text {
+  margin-bottom: 35px;
+  width: 441px;
+
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  text-align: justify;
+
+  color: var(--main-color);
+}
+
+.feature-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 60px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 1px solid #f7941e;
+  border-radius: 5px;
+}
+
+/* === SECTION POSTS TALL === */
+
+.tall-section {
+  padding-top: 96px;
+
+  background-color: var(--reverse-color);
+}
+
+.tall-heading {
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  text-align: center;
+
+  color: var(--main-color);
+}
+
+.tall-text {
+margin-bottom: 50px;
+
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  text-align: center;
+
+  color: var(--main-color);
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+}
+
+.card-item {
+  margin-right: 30px;
+
+  width: 270px;
+height: 436px;
+
+}
+
+.card-thumb {
+  width: 100%;
+  height: 100%;
+
+}
+
+.card-thumb:hover,
+.card-thumb:focus {
+  box-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
 }
