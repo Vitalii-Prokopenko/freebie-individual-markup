@@ -1,0 +1,71 @@
+/* === HEADER === */
+
+.page-header {
+  display: flex;
+  align-items: center;
+
+  height: 116px;
+
+  background-color: var(--main-background-color);
+}
+
+.header-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-link {
+  position: absolute;
+  left: -55px;
+
+  font-family: "Homemade Apple";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(39 / 18);
+
+  color: var(--second-color);
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu-item {
+  margin-right: 31px;
+}
+
+.main-menu-item:last-child {
+  margin-right: 0;
+}
+
+.main-menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  color: #000000;
+}
+
+.btn-gift-finder {
+  position: absolute;
+  right: -101px;
+
+  width: 150px;
+  height: 43.5px;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+  background-color: transparent;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}

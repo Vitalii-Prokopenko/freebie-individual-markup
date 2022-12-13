@@ -314,5 +314,5 @@ height: 436px;
 
 .card-thumb:hover,
 .card-thumb:focus {
-  box-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+  box-shadow (10px 10px 15px rgba(0, 0, 0, 0.05));
 }
