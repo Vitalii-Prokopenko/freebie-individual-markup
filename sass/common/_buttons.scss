@@ -47,3 +47,26 @@
     background-color: $reverseColor;
   }
 }
+
+.feature__btn {
+  @extend %btn-common;
+
+  @include only-mobile(width, 140px);
+  @include only-mobile(height, 40px);
+  @include only-mobile(font-size, 14px);
+  @include only-mobile(line-height, calc(16 / 14));
+
+  @include only-tablet(width, 180px);
+  @include only-tablet(height, 44px);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $reverseColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $accentColor;
+  }
+}
