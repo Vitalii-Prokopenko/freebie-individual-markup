@@ -47,7 +47,10 @@
 
         <!-- == Gift finder == -->
 
-        <button class="btn btn-gift-finder btn-gift-finder--header" type="button">
+        <button
+          class="btn btn-gift-finder btn-gift-finder--header"
+          type="button"
+        >
           gift finder
         </button>
 
@@ -79,26 +82,36 @@
       <!-- == Hero == -->
 
       <section class="page-section hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="visually-hidden">Gift store</h1>
           <div class="hero__description">
-            <h2 class="hero__heading">
-              Find a gift for your wife or girlfriend
-            </h2>
-            <p class="hero__text">
-              Struggling to find a gift for your wife or girlfriend? No problem!
-            </p>
-            <button class="btn btn-common btn-gift-finder--hero" type="button">
+            <div class="hero__title-wrap">
+              <h2 class="hero__title">
+                Find a gift for your wife or girlfriend
+              </h2>
+              <p class="hero__subtitle">
+                Struggling to find a gift for your wife or girlfriend? No
+                problem!
+              </p>
+            </div>
+            <button
+              class="btn btn-gift-finder btn-gift-finder--hero"
+              type="button"
+            >
               find gift now
             </button>
           </div>
-          <img
-            class="image"
-            src="./images/img-hero.jpg"
-            alt="man and woman laugh, woman is on the man's back and hold a flower"
-            width="719"
-            height="700"
-          />
+          <div class="hero__thumb">
+            <img
+              class="image"
+              srcset="
+                images/img/img-hero-719.jpg      1x,
+                images/img2x/img-hero2x-1438.jpg 2x
+              "
+              src="images/img/img-hero-719.jpg"
+              alt="man and woman laugh, woman is on the man's back and hold a flower"
+            />
+          </div>
         </div>
       </section>
 
@@ -294,43 +307,43 @@
 
       <!-- == Social links == -->
 
-        <ul class="list social-links">
-          <li class="social-links__item">
-            <a class="link social-links__link" href="#">
-              <svg class="social-links__icon">
-                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a class="link social-links__link" href="#">
-              <svg class="social-links__icon">
-                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a class="link social-links__link" href="#">
-              <svg class="social-links__icon">
-                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a class="link social-links__link" href="#">
-              <svg class="social-links__icon">
-                <use href="./images/icons/symbol-defs.svg#icon-yuotube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a class="link social-links__link" href="#">
-              <svg class="social-links__icon">
-                <use href="./images/icons/symbol-defs.svg#icon-pinterest"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <ul class="list social-links mobile-menu__social-links">
+        <li class="social-links__item">
+          <a class="link social-links__link" href="#">
+            <svg class="social-links__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="link social-links__link" href="#">
+            <svg class="social-links__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="link social-links__link" href="#">
+            <svg class="social-links__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="link social-links__link" href="#">
+            <svg class="social-links__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a class="link social-links__link" href="#">
+            <svg class="social-links__icon">
+              <use href="./images/icons/symbol-defs.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- === PAGE FOOTER === -->

@@ -3,9 +3,6 @@
 .btn-gift-finder {
   @extend %btn-common;
 
-  @include only-desktop(flex-basis, 12.5%);
-  @include only-tablet(flex-basis, 20%);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -25,6 +22,28 @@
   @include only-mobile(line-height, calc(16 / 14));
   @include only-mobile(text-transform, capitalize);
 
+  @include only-desktop(flex-basis, 12.5%);
+  @include only-tablet(flex-basis, 20%);
+
   @include tablet-and-desktop(width, 150px);
   @include tablet-and-desktop(height, 44px);
+}
+
+.btn-gift-finder--hero {
+  color: $reverseColor;
+  background-color: $accentColor;
+
+  @include only-mobile(width, 140px);
+  @include only-mobile(height, 40px);
+  @include only-mobile(font-size, 14px);
+  @include only-mobile(line-height, calc(16 / 14));
+
+  @include only-tablet(width, 180px);
+  @include only-tablet(height, 44px);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    background-color: $reverseColor;
+  }
 }

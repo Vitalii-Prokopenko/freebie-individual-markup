@@ -1,42 +1,104 @@
 /* === SECTION HERO === */
 
-.page-section {
-  width: 1440px;
-  margin: 0 auto;
-}
+// .page-section {
+//   width: 1440px;
+//   margin: 0 auto;
+// }
 
-.hero-section {
-  display: flex;
-  justify-content: center;
-}
+// .hero-section {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.hero-description {
-  padding-left: 162px;
-  padding-top: 154px;
-  width: 721px;
+.hero {
+  background-color: $bgSecondColor;
 
-  background-color: var(--second-background-color);
-}
+  &-container {
+    display: flex;
+    padding: 0;
 
-.hero-heading {
-  margin-bottom: 36px;
-  width: 433px;
+    @include only-mobile(flex-direction, column-reverse);
+    @include tablet-and-desktop(justify-content, space-between);
+  }
 
-  font-weight: 400;
-  font-size: 56px;
-  line-height: calc(66 / 56);
+  &__thumb {
+    width: 320px;
 
-  color: var(--main-color);
-}
+    @include only-mobile(margin-bottom, 30px);
 
-.hero-text {
-  margin-bottom: 52px;
-  width: 422px;
+    @include only-tablet(width, 384px);
 
-  font-size: 20px;
-  line-height: calc(28 / 20);
+    @include only-desktop(width, 600px);
+  }
 
-  color: var(--main-color);
+  &__description {
+    margin: 0 auto;
+    padding: 0 20px 20px;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+
+    text-align: center;
+
+    @include only-tablet(width, 384px);
+    @include only-tablet(padding, 60px 70px);
+
+    @include only-desktop(width, 600px);
+    @include only-desktop(padding, 90px 110px);
+
+    @include tablet-and-desktop(display, flex);
+    @include tablet-and-desktop(flex-direction, column);
+    @include tablet-and-desktop(justify-content, space-between);
+    @include tablet-and-desktop(align-items, left);
+    @include tablet-and-desktop(text-align, left);
+
+    // padding-left: 162px;
+    // padding-top: 154px;
+    // width: 721px;
+  }
+
+  &__title {
+    // margin-bottom: 36px;
+    // width: 433px;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(36 / 32);
+
+    // font-size: 56px;
+    // line-height: calc(66 / 56);
+
+    color: $mainColor;
+
+    @include only-desktop(font-size, 56px);
+    @include only-desktop(line-height, calc(66 / 56));
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    // margin-bottom: 52px;
+    // width: 422px;
+
+    // font-size: 20px;
+    // line-height: calc(28 / 20);
+
+    color: $mainColor;
+
+    
+    @include only-desktop(font-size, 20px);
+    @include only-desktop(line-height, calc(28 / 20));
+
+    @include tablet-and-desktop(margin-bottom, auto);
+  }
 }
 
 .btn-hero-gift-finder {

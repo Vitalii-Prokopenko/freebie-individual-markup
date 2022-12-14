@@ -62,7 +62,8 @@ h6 {
 /* img */
 .image {
   display: block;
-  max-height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* a */
@@ -100,18 +101,6 @@ h6 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
-  .btn-gift-finder {
-    -ms-flex-preferred-size: 12.5%;
-        flex-basis: 12.5%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .btn-gift-finder {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-  }
-}
 .btn-gift-finder:hover, .btn-gift-finder:focus {
   color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -144,6 +133,18 @@ h6 {
     text-transform: capitalize;
   }
 }
+@media screen and (min-width: 1200px) {
+  .btn-gift-finder--header {
+    -ms-flex-preferred-size: 12.5%;
+        flex-basis: 12.5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-gift-finder--header {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
 @media screen and (min-width: 768px) {
   .btn-gift-finder--header {
     width: 150px;
@@ -153,6 +154,45 @@ h6 {
   .btn-gift-finder--header {
     height: 44px;
   }
+}
+
+.btn-gift-finder--hero {
+  color: #ffffff;
+  background-color: #f7941e;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--hero {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--hero {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--hero {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--hero {
+    line-height: 1.1428571429;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-gift-finder--hero {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-gift-finder--hero {
+    height: 44px;
+  }
+}
+.btn-gift-finder--hero:hover, .btn-gift-finder--hero:focus {
+  color: #f7941e;
+  background-color: #ffffff;
 }
 
 /* === HEADER === */
@@ -220,6 +260,18 @@ h6 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .logo-link {
     line-height: 1.3333333333;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-link {
+    -ms-flex-preferred-size: 19%;
+        flex-basis: 19%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    -ms-flex-preferred-size: 12%;
+        flex-basis: 12%;
   }
 }
 .logo-link:hover, .logo-link:focus {
@@ -349,42 +401,145 @@ h6 {
 }
 
 /* === SECTION HERO === */
-.page-section {
-  width: 1440px;
-  margin: 0 auto;
+.hero {
+  background-color: #F1F1F2;
 }
-
-.hero-section {
+.hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0;
 }
-
-.hero-description {
-  padding-left: 162px;
-  padding-top: 154px;
-  width: 721px;
-  background-color: var(--second-background-color);
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
-
-.hero-heading {
-  margin-bottom: 36px;
-  width: 433px;
+@media screen and (min-width: 768px) {
+  .hero-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.hero__thumb {
+  width: 320px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero__thumb {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__thumb {
+    width: 384px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__thumb {
+    width: 600px;
+  }
+}
+.hero__description {
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__description {
+    width: 384px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__description {
+    padding: 60px 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__description {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__description {
+    padding: 90px 110px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__description {
+    text-align: left;
+  }
+}
+.hero__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.125;
+  color: #000000;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    line-height: 1.1785714286;
+  }
+}
+.hero__subtitle {
+  margin-bottom: 20px;
   font-weight: 400;
-  font-size: 56px;
-  line-height: 1.1785714286;
-  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
 }
-
-.hero-text {
-  margin-bottom: 52px;
-  width: 422px;
-  font-size: 20px;
-  line-height: 1.4;
-  color: var(--main-color);
+@media screen and (min-width: 1200px) {
+  .hero__subtitle {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__subtitle {
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__subtitle {
+    margin-bottom: auto;
+  }
 }
 
 .btn-hero-gift-finder {

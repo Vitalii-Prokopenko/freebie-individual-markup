@@ -20,6 +20,10 @@
   @include only-mobile(font-size, 18px);
   @include only-mobile(line-height, calc(24 / 18));
 
+  @include only-tablet(flex-basis, 19%);
+  
+  @include only-desktop(flex-basis, 12%);
+
   &:hover,
   &:focus {
     color: $accentColor;
