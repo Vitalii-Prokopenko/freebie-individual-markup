@@ -1,7 +1,10 @@
 /* Container */
 
 .container {
-  width: 1170px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
+
+  @include only-mobile(width, $minMobile);
+  @include only-tablet(width, $minTablet);
+  @include only-desktop(width, $minDesktop);
 }

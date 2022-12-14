@@ -1,29 +1,35 @@
-@mixin only-mobile() {
+@mixin only-mobile($property, $value) {
   @media screen and (min-width: $minMobile) and (max-width: calc($minTablet - 1px)) {
+    #{$property}: $value;
   }
 }
 
-@mixin only-tablet() {
+@mixin only-tablet($property, $value) {
   @media screen and (min-width: $minTablet) and (max-width: calc($minDesktop - 1px)) {
+     #{$property}: $value;
   }
 }
 
-@mixin only-desktop() {
+@mixin only-desktop($property, $value) {
   @media screen and (min-width: $minDesktop) {
+     #{$property}: $value;
   }
 }
 
-@mixin mobile-and-tablet() {
+@mixin mobile-and-tablet($property, $value) {
   @media screen and (min-width: $minMobile) and (max-width: calc($minDesktop - 1px)) {
+     #{$property}: $value;
   }
 }
 
-@mixin tablet-and-desktop() {
+@mixin tablet-and-desktop($property, $value) {
   @media screen and (min-width: $minTablet) {
+     #{$property}: $value;
   }
 }
 
-@mixin mobile-and-tablet() {
+@mixin mobile-and-tablet($property, $value) {
   @media screen and (min-width: $minMobile) and (max-width: calc($minDesktop - 1px)) {
+     #{$property}: $value;
   }
 }
