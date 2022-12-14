@@ -50,6 +50,26 @@
         <button class="btn btn-common btn-giftfinder" type="button">
           gift finder
         </button>
+
+        <!-- == Mobile menu open-button == -->
+
+        <button
+          class="btn menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-toggle__icon"
+            width="40"
+            height="40"
+            aria-label="Mobile menu button"
+          >
+            <use
+              class="icon-open"
+              href="./images/icons/symbol-defs.svg#icon-menu_open"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -60,10 +80,11 @@
 
       <section class="page-section hero">
         <div class="container">
+          <h1 class="visually-hidden">Gift store</h1>
           <div class="hero__description">
-            <h1 class="hero__heading">
+            <h2 class="hero__heading">
               Find a gift for your wife or girlfriend
-            </h1>
+            </h2>
             <p class="hero__text">
               Struggling to find a gift for your wife or girlfriend? No problem!
             </p>
@@ -237,6 +258,80 @@
         </div>
       </section>
     </main>
+    <!-- === Mobile menu container === -->
+
+    <div class="menu-container mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle__icon"
+          width="40"
+          height="40"
+          aria-label="Mobile menu button"
+        >
+          <use
+            class="icon-open"
+            href="./images/icons/symbol-defs.svg#icon-menu-close"
+          ></use>
+        </svg>
+      </button>
+
+      <!-- Mobile menu -->
+
+      <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link current" href="#">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="#">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="#">Services</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="#">Blogs</a>
+        </li>
+      </ul>
+
+      <!-- == Social links == -->
+
+        <ul class="list social-links">
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-yuotube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use href="./images/icons/symbol-defs.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </div>
 
     <!-- === PAGE FOOTER === -->
 
