@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freebie - Gift Store Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gift Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -19,260 +22,294 @@
 
     <header class="page-header">
       <div class="container header-container">
+
         <!-- == Logo == -->
 
         <a class="link logo-link" href="#">logo</a>
 
         <!-- == Main menu == -->
 
-        <nav class="main-nav">
-          <ul class="list main-menu">
-            <li class="main-menu-item">
-              <a class="link main-menu-link" href="#">Home</a>
+        <nav class="page-nav">
+          <ul class="list page-nav__list">
+            <li class="page-nav__item">
+              <a class="link page-nav__link" href="#">Home</a>
             </li>
-            <li class="main-menu-item">
-              <a class="link" class="link main-menu-link" href="#">About us</a>
+            <li class="page-nav__item">
+              <a class="link page-nav__link" href="#">About us</a>
             </li>
-            <li class="main-menu-item">
-              <a class="link main-menu-link" href="#">Services</a>
+            <li class="page-nav__item">
+              <a class="link page-nav__link" href="#">Services</a>
             </li>
-            <li class="main-menu-item">
-              <a class="link main-menu-link" href="#">Blogs</a>
+            <li class="page-nav__item">
+              <a class="link page-nav__link" href="#">Blogs</a>
             </li>
           </ul>
         </nav>
 
         <!-- == Gift finder == -->
 
-        <button class="btn btn-gift-finder">gift finder</button>
+        <button class="btn btn-giftfinder">gift finder</button>
       </div>
     </header>
 
     <!-- === MAIN PAGE CONTENT === -->
 
     <main>
+
       <!-- == Hero == -->
 
-      <section class="page-section hero-section">
-        <div class="hero-description">
-          <h1 class="hero-heading">Find a gift for your wife or girlfriend</h1>
-          <p class="hero-text">
-            Struggling to find a gift for your wife or girlfriend? No problem!
-          </p>
-          <button class="btn-hero-gift-finder">Find gift now</button>
+      <section class="page-section hero">
+        <div class="container">
+          <div class="hero__description">
+            <h1 class="hero__heading">
+              Find a gift for your wife or girlfriend
+            </h1>
+            <p class="hero__text">
+              Struggling to find a gift for your wife or girlfriend? No problem!
+            </p>
+            <button class="btn btn-giftfinder--hero">Find gift now</button>
+          </div>
+          <img class="image"
+            src="./images/img-hero.jpg"
+            alt="man and woman laugh, woman is on the man's back and hold a flower"
+            width="719"
+            height="700"
+          />
         </div>
-        <img
-          src="./images/img-hero.jpg"
-          alt="man and woman laugh, woman is on the man's back and hold a flower"
-          width="719"
-          height="700"
-        />
       </section>
 
       <!-- == Feature == -->
 
-      <section class="page-section feature-section">
-        <div class="feature-description">
-          <h2 class="feature-heading">How we work</h2>
-          <p class="feature-text">
-            We’ve actually already asked hundreds of women what they want, and
-            made a database with the results. All you have to do is take our
-            short survey that only takes seconds, and our proprietary algorithm
-            will match you with a few perfect gift options.
-          </p>
-          <a class="link feature-link" href="#">Learn More</a>
+      <section class="page-section feature">
+        <div class="container">
+          <div class="feature__description">
+            <h2 class="feature__heading">How we work</h2>
+            <p class="feature__text">
+              We’ve actually already asked hundreds of women what they want, and
+              made a database with the results. All you have to do is take our
+              short survey that only takes seconds, and our proprietary
+              algorithm will match you with a few perfect gift options.
+            </p>
+            <a class="link feature__link" href="#">Learn More</a>
+          </div>
+          <img class="image"
+            src="./images/img-thanks.jpg"
+            alt="black card with the word Thanks"
+          />
         </div>
-        <img
-          src="./images/img-thanks.jpg"
-          alt="black card with the word Thanks"
-        />
       </section>
 
       <!-- == Posts Tall == -->
 
-      <section class="page-section tall-section">
-        <h2 class="tall-heading">Gifts for all Occasions</h2>
-        <p class="tall-text">
-          &#34;Try our web app to find the best gifts for all occasions&#34;
-        </p>
-        <ul class="list card-list">
-          <li class="card-item">
-            <div class="card-thumb">
-              <img
-                src="./images/img-blog-1.jpg"
-                alt="cake with candles happy birthday"
-                width="270"
-                height="270"
-              />
-              <h3>Birthday</h3>
-              <a href="">See More &#8250;</a>
-            </div>
-          </li>
-          <li class="card-item">
-            <div class="card-thumb">
-              <img
-                src="./images/img-blog-2.jpg"
-                alt="Orange book, women shoes and flowers on the chair"
-                width="270"
-                height="270"
-              />
-              <h3>Anniversary</h3>
-              <a href="">See More &#8250;</a>
-            </div>
-          </li>
-          <li class="card-item">
-            <div class="card-thumb">
-              <img
-                src="./images/img-blog-3.jpg"
-                alt="Packed gift with kiss me label"
-                width="270"
-                height="270"
-              />
-              <h3>Valentine's Day</h3>
-              <a href="">See More &#8250;</a>
-            </div>
-          </li>
-          <li class="card-item">
-            <div class="card-thumb">
-              <img
-                src="./images/img-blog-4.jpg"
-                alt="Christmas tree with decorations"
-                width="270"
-                height="270"
-              />
-              <h3>Christmas</h3>
-              <a href="">See More &#8250;</a>
-            </div>
-          </li>
-        </ul>
+      <section class="page-section tall">
+        <div class="container">
+          <h2 class="tall__heading">Gifts for all Occasions</h2>
+          <p class="tall__text">
+            &#34;Try our web app to find the best gifts for all occasions&#34;
+          </p>
+          <ul class="list tall__list">
+            <li class="tall__item card">
+              <div class="card__thumb">
+                <img class="image card__img"
+                  src="./images/img-blog-1.jpg"
+                  alt="cake with candles happy birthday"
+                  width="270"
+                  height="270"
+                />
+                <h3>Birthday</h3>
+                <a class="link card__link" href="">See More &#8250;</a>
+              </div>
+            </li>
+            <li class="tall__item card">
+              <div class="card__thumb">
+                <img class="image card__img"
+                  src="./images/img-blog-2.jpg"
+                  alt="Orange book, women shoes and flowers on the chair"
+                  width="270"
+                  height="270"
+                />
+                <h3>Anniversary</h3>
+                <a class="link card__link" href="">See More &#8250;</a>
+              </div>
+            </li>
+            <li class="tall__item card">
+              <div class="card__thumb">
+                <img class="image card__img"
+                  src="./images/img-blog-3.jpg"
+                  alt="Packed gift with kiss me label"
+                  width="270"
+                  height="270"
+                />
+                <h3>Valentine's Day</h3>
+                <a class="link card__link" href="">See More &#8250;</a>
+              </div>
+            </li>
+            <li class="tall__item card">
+              <div class="card__thumb">
+                <img class="image card__img"
+                  src="./images/img-blog-4.jpg"
+                  alt="Christmas tree with decorations"
+                  width="270"
+                  height="270"
+                />
+                <h3>Christmas</h3>
+                <a class="link card__link" href="">See More &#8250;</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- == CTA == -->
 
       <section class="page-section cta">
-        <h2>Ready to get started?</h2>
-        <p>Sign up or contact us</p>
-        <ul>
-          <li>
-            <button>Find gift now</button>
-          </li>
-          <li>
-            <a href="#">How it works</a>
-          </li>
-        </ul>
+        <div class="container">
+          <b class="cta__bold-text">Ready to get started?</b>
+          <p class="cta__text">Sign up or contact us</p>
+          <ul list cta__list>
+            <li class="cta__item">
+              <button class="btn btn-giftfinder--cta">Find gift now</button>
+            </li>
+            <li class="cta__item">
+              <button class="btn">How it works</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- == Posts blog top == -->
 
-      <section class="page-section posts-blog-top">
-        <!-- == Top blog == -->
+      <section class="page-section topblog">
+        <div class="container">
+          <!-- == Top blog == -->
 
-        <h2>Our Best Blogs Ever</h2>
-        <p>
-          &#34;Try our blog to find the best tips and tricks to select your
-          gift&#34;
-        </p>
-        <div>
-          <img
-            src="./images/img-best-blog.jpg"
-            alt="a man in a white shirt rides a woman in a white dress on a swing, the woman has a bouquet of white flowers in her hands, they smile"
-            width="400"
-            height="370"
-          />
-          <p>Mr. John Doe</p>
-          <p>The best way to wish your wife</p>
-          <a href="">Read More</a>
+          <h2 class="topblog__heading">Our Best Blogs Ever</h2>
+          <p class="topblog__text">
+            &#34;Try our blog to find the best tips and tricks to select your
+            gift&#34;
+          </p>
+          <div class="topblog__wrap">
+            <img class="image"
+              src="./images/img-best-blog.jpg"
+              alt="a man in a white shirt rides a woman in a white dress on a swing, the woman has a bouquet of white flowers in her hands, they smile"
+              width="400"
+              height="370"
+            />
+            <p class="topblog__author">Mr. John Doe</p>
+            <p class="topblog__name">The best way to wish your wife</p>
+            <a class="link topblog__link" href="">Read More</a>
+          </div>
+
+          <!-- == Description of database and mechanism == -->
+          <ul class="list how-it-works">
+            <li class="how-it-works__item">
+              <h3 class="how-it-works__heading">
+                Database to find the gifts for your girlfriend
+              </h3>
+              <p class="how-it-works__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <a class="link how-it-works__link" href="">Read More</a>
+            </li>
+            <li class="how-it-works__item">
+              <h3 class="how-it-works__heading">
+                How Artificial Intelligence read your mind to find the best gift
+              </h3>
+              <p class="how-it-works__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <a class="link how-it-works__link" href="">Read More</a>
+            </li>
+          </ul>
         </div>
-
-        <!-- == Description of database and mechanism == -->
-        <ul>
-          <li>
-            <h3>Database to find the gifts for your girlfriend</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <a href="">Read More</a>
-          </li>
-          <li>
-            <h3>
-              How Artificial Intelligence read your mind to find the best gift
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <a href="">Read More</a>
-          </li>
-        </ul>
       </section>
     </main>
 
     <!-- === PAGE FOOTER === -->
 
-    <footer>
-      <!-- == Logo == -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="footer-nav-wrap">
+          <!-- == Logo == -->
 
-      <a href="#">Logo</a>
+          <a class="link logo-link--footer" href="#">Logo</a>
 
-      <!-- == Main menu == -->
+          <!-- == Main menu == -->
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+          <ul class="list page-nav__list page-footer__nav-list">
+            <li class="page-nav__item page-footer__nav-item">
+              <a class="link page-nav__link page-footer__nav-link" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="page-nav__item page-footer__nav-item">
+              <a class="link page-nav__link page-footer__nav-link" href="#"
+                >About us</a
+              >
+            </li>
+            <li class="page-nav__item page-footer__nav-item">
+              <a class="link page-nav__link page-footer__nav-link" href="#"
+                >Services</a
+              >
+            </li>
+            <li class="page-nav__item page-footer__nav-item">
+              <a class="link page-nav__link page-footer__nav-link" href="#"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <!-- !!! Add Line !!! -->
+        <!-- == Social links == -->
 
-      <!-- == Social links == -->
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="link social-links__link" href="#">
+              <svg class="social-links__icon">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
 
-      <ul>
-        <li>
-          <a href="">
-            <svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg>
-              <use></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        <!-- == Authorization rights == -->
 
-      <!-- == Authorization rights == -->
+        <p class="author-rights">&#169; 2010 — 2020</p>
 
-      <p>&#169; 2010 — 2020</p>
+        <!-- == Privacy terms == -->
 
-      <!-- == Privacy terms == -->
-
-      <a href="#">Privacy — Terms</a>
+        <a class="link privacy-terms-link" href="#">Privacy — Terms</a>
+      </div>
     </footer>
   </body>
 </html>
