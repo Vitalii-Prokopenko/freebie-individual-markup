@@ -7,8 +7,22 @@
   text-align: center;
   background-color: $accentColor;
 
+  @include only-tablet(padding, 52px 0);
+  @include only-desktop(padding, 82px 0);
+
+  &-container {
+    @include tablet-and-desktop(display, flex);
+    @include tablet-and-desktop(justify-content, space-between);
+    @include tablet-and-desktop(align-items, center);
+
+    @include only-tablet(padding, 0 45px);
+    @include only-desktop(padding, 0 115px);
+  }
+
   &__text-wrap {
     margin-bottom: 20px;
+
+    @include tablet-and-desktop(margin-bottom, 0);
   }
 
   &__bold-text,
@@ -18,9 +32,8 @@
 
     color: $mainColor;
 
-//  font-size: 32px;
-//     line-height: calc(45 / 32);
-
+    //  font-size: 32px;
+    //     line-height: calc(45 / 32);
   }
 
   &__bold-text {
@@ -31,11 +44,12 @@
     font-weight: 400;
   }
 
-&__list {
+  &__list {
     display: flex;
-    justify-content: space-evenly;
-}
+    justify-content: space-between;
+  }
 
-
-
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
 }

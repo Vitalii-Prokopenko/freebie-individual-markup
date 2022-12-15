@@ -3,10 +3,10 @@
 .btn-gift-finder {
   @extend %btn-common;
 
-  width: 200px;
-  height: 60px;
-  font-size: 18px;
-  line-height: calc(22 / 18);
+  // width: 200px;
+  // height: 60px;
+  // font-size: 18px;
+  // line-height: calc(22 / 18);
   // color: $accentColor;
   // background-color: transparent;
 
@@ -53,6 +53,25 @@
       background-color: $reverseColor;
     }
   }
+
+  &--cta {
+    color: $reverseColor;
+    background-color: $mainColor;
+
+    @include only-mobile(width, 140px);
+    @include only-mobile(height, 40px);
+    @include only-mobile(font-size, 14px);
+    @include only-mobile(line-height, calc(16 / 14));
+
+    @include only-tablet(width, 180px);
+    @include only-tablet(height, 44px);
+
+    &:hover,
+    &:focus {
+      color: $mainColor;
+      background-color: $reverseColor;
+    }
+  }
 }
 
 .btn-how-it-works {
@@ -69,14 +88,34 @@
   @include only-desktop(width, 200px);
   @include only-desktop(height, 60px);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    color: $reverseColor;
+    // color: $mainColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: $accentColor;
+    background-color: $reverseColor;
+  }
+
+  &--cta {
+    color: $mainColor;
+    @include button-border($mainColor);
+    // color: $reverseColor;
+    // background-color: $mainColor;
+
+    @include only-mobile(width, 140px);
+    @include only-mobile(height, 40px);
+    @include only-mobile(font-size, 14px);
+    @include only-mobile(line-height, calc(16 / 14));
+
+    @include only-tablet(width, 180px);
+    @include only-tablet(height, 44px);
+
+    &:hover,
+    &:focus {
+      color: $mainColor;
+      background-color: $reverseColor;
+    }
   }
 }

@@ -15,7 +15,11 @@
 
 .btn-how-it-works, .btn-gift-finder {
   padding: 0;
+  width: 200px;
+  height: 60px;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2222222222;
   text-transform: uppercase;
   text-align: center;
   color: #f7941e;
@@ -92,10 +96,6 @@ h6 {
 
 /* == Button in header == */
 .btn-gift-finder {
-  width: 200px;
-  height: 60px;
-  font-size: 18px;
-  line-height: 1.2222222222;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -192,12 +192,50 @@ h6 {
   color: #f7941e;
   background-color: #ffffff;
 }
+.btn-gift-finder--cta {
+  color: #ffffff;
+  background-color: #000000;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--cta {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--cta {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--cta {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-gift-finder--cta {
+    line-height: 1.1428571429;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-gift-finder--cta {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-gift-finder--cta {
+    height: 44px;
+  }
+}
+.btn-gift-finder--cta:hover, .btn-gift-finder--cta:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .btn-how-it-works {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn-how-it-works {
@@ -240,10 +278,47 @@ h6 {
   }
 }
 .btn-how-it-works:hover, .btn-how-it-works:focus {
-  color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #f7941e;
+  background-color: #ffffff;
+}
+.btn-how-it-works--cta {
+  color: #000000;
+  border: 1px solid #000000;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-how-it-works--cta {
+    width: 140px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-how-it-works--cta {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-how-it-works--cta {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-how-it-works--cta {
+    line-height: 1.1428571429;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-how-it-works--cta {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-how-it-works--cta {
+    height: 44px;
+  }
+}
+.btn-how-it-works--cta:hover, .btn-how-it-works--cta:focus {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /* === HEADER === */
@@ -898,8 +973,54 @@ h6 {
   text-align: center;
   background-color: #f7941e;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cta {
+    padding: 52px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cta {
+    padding: 82px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cta-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cta-container {
+    padding: 0 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cta-container {
+    padding: 0 115px;
+  }
+}
 .cta__text-wrap {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .cta__text-wrap {
+    margin-bottom: 0;
+  }
 }
 .cta__bold-text, .cta__text {
   font-size: 26px;
@@ -916,7 +1037,10 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cta__item:not(:last-child) {
+  margin-right: 16px;
 }/*# sourceMappingURL=main.css.map */
