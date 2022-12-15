@@ -113,10 +113,10 @@
   &__link {
     font-size: 14px;
     line-height: calc(19 / 14);
-     @include only-tablet(font-size, 18px);
-    @include only-tablet(line-height, calc(25 / 18));
-    @include only-desktop(font-size, 26px);
-    @include only-desktop(line-height, calc(34 / 26));
+    //  @include only-tablet(font-size, 18px);
+    // @include only-tablet(line-height, calc(25 / 18));
+    // @include only-desktop(font-size, 26px);
+    // @include only-desktop(line-height, calc(34 / 26));
 
     color: $mainColor;
 
