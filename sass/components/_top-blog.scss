@@ -39,14 +39,20 @@
 
     // @include only-mobile(margin-bottom, 30px);
 
-    @include only-tablet(width, 384px);
+    @include only-tablet(width, 312px);
 
     @include only-desktop(width, 600px);
   }
 
   &__text-wrap {
     padding: 30px 15px;
-    @include tablet-and-desktop(padding, 63px 200px 49px 78px);
+
+    @include only-tablet(display, flex);
+    @include only-tablet(flex-direction, column);
+    @include only-tablet(justify-content, space-between);
+
+    @include only-tablet(padding, 25px 100px 25px 45px);
+    @include only-desktop(padding, 63px 200px 49px 78px);
     @include tablet-and-desktop(text-align, left);
   }
 
@@ -66,11 +72,14 @@
   &__blogtitle {
     margin-bottom: 50px;
 
-    font-size: 38px;
-    line-height: calc(48 / 38);
+    @include only-tablet(margin-bottom, auto);
 
-    @include tablet-and-desktop(font-size, 48px);
-    @include tablet-and-desktop(line-height, calc(58 / 48));
+
+    font-size: 35px;
+    line-height: calc(45 / 35);
+
+    @include only-desktop(font-size, 48px);
+    @include only-desktop(line-height, calc(58 / 48));
   }
 
   &__link {
@@ -92,11 +101,10 @@
   &__item {
     padding: 30px 30px 40px;
 
-@include tablet-and-desktop(display, flex);
-@include tablet-and-desktop(flex-direction, column);
-@include tablet-and-desktop(justify-content, space-between);
-// @include tablet-and-desktop(align-items, left);
-
+    @include tablet-and-desktop(display, flex);
+    @include tablet-and-desktop(flex-direction, column);
+    @include tablet-and-desktop(justify-content, space-between);
+    // @include tablet-and-desktop(align-items, left);
 
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 
@@ -115,17 +123,17 @@
     @include tablet-and-desktop(margin-right, 30px);
   }
 
-//   &__title,
-//   &__excerpt
-//   {
-//     margin-bottom: 16px;
-//     // text-align: left;
-//   }
+  //   &__title,
+  //   &__excerpt
+  //   {
+  //     margin-bottom: 16px;
+  //     // text-align: left;
+  //   }
 
   &__title {
-margin-bottom: 16px;
+    margin-bottom: 16px;
 
-@include tablet-and-desktop(flex-grow, 1);
+    @include tablet-and-desktop(flex-grow, 1);
 
     font-weight: 700;
     font-size: 22px;
@@ -136,7 +144,7 @@ margin-bottom: 16px;
   }
 
   &__excerpt {
- margin-bottom: 16px;
+    margin-bottom: 16px;
 
     font-size: 18px;
     line-height: calc(25 / 18);
