@@ -1,0 +1,162 @@
+/* == Top blog section == */
+
+.topblog {
+  padding: 40px 0;
+
+  text-align: center;
+  background-color: $reverseColor;
+
+  @include only-tablet(padding, 60px 0);
+
+  @include only-desktop(padding, 86px 0 82px);
+
+  &-container {
+    padding: 0;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include tablet-and-desktop(margin-bottom, 23px);
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @include tablet-and-desktop(margin-bottom, 71px);
+  }
+
+  &__wrap {
+    margin-bottom: 40px;
+
+    @include tablet-and-desktop(display, flex);
+
+    background-color: $mainColor;
+  }
+
+  &__thumb {
+    width: 320px;
+
+    // @include only-mobile(margin-bottom, 30px);
+
+    @include only-tablet(width, 384px);
+
+    @include only-desktop(width, 600px);
+  }
+
+  &__text-wrap {
+    padding: 30px 15px;
+    @include tablet-and-desktop(padding, 63px 200px 49px 78px);
+    @include tablet-and-desktop(text-align, left);
+  }
+
+  &__author,
+  &__blogtitle,
+  &__link {
+    color: $reverseColor;
+  }
+
+  &__author {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+
+  &__blogtitle {
+    margin-bottom: 50px;
+
+    font-size: 38px;
+    line-height: calc(48 / 38);
+
+    @include tablet-and-desktop(font-size, 48px);
+    @include tablet-and-desktop(line-height, calc(58 / 48));
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: calc(25 / 18);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+}
+
+.how-it-works {
+  @include tablet-and-desktop(display, flex);
+
+  &__item {
+    padding: 30px 30px 40px;
+
+@include tablet-and-desktop(display, flex);
+@include tablet-and-desktop(flex-direction, column);
+@include tablet-and-desktop(justify-content, space-between);
+// @include tablet-and-desktop(align-items, left);
+
+
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @include tablet-and-desktop(margin-bottom, 0);
+    @include tablet-and-desktop(margin-right, 30px);
+  }
+
+//   &__title,
+//   &__excerpt
+//   {
+//     margin-bottom: 16px;
+//     // text-align: left;
+//   }
+
+  &__title {
+margin-bottom: 16px;
+
+@include tablet-and-desktop(flex-grow, 1);
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: calc(34 / 22);
+    text-align: left;
+
+    color: $mainColor;
+  }
+
+  &__excerpt {
+ margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: left;
+
+    color: $mainColor;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    text-align: left;
+
+    color: $mainColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+}

@@ -129,7 +129,9 @@
                 algorithm will match you with a few perfect gift options.
               </p>
             </div>
-            <button class="btn btn-how-it-works" type="button">learn More</button>
+            <button class="btn btn-how-it-works" type="button">
+              learn More
+            </button>
           </div>
           <div class="feature__thumb">
             <img
@@ -236,12 +238,20 @@
           </div>
           <ul class="list cta__list">
             <li class="cta__item">
-              <button class="btn btn-gift-finder btn-gift-finder--cta" type="button">
+              <button
+                class="btn btn-gift-finder btn-gift-finder--cta"
+                type="button"
+              >
                 find gift now
               </button>
             </li>
             <li class="cta__item">
-              <button class="btn btn-how-it-works btn-how-it-works--cta" type="button">how it works</button>
+              <button
+                class="btn btn-how-it-works btn-how-it-works--cta"
+                type="button"
+              >
+                how it works
+              </button>
             </li>
           </ul>
         </div>
@@ -250,31 +260,37 @@
       <!-- == Posts blog top == -->
 
       <section class="page-section topblog">
-        <div class="container">
+        <div class="container topblog-container">
           <!-- == Top blog == -->
 
-          <h2 class="topblog__heading">Our Best Blogs Ever</h2>
+          <h2 class="topblog__title">Our Best Blogs Ever</h2>
           <p class="topblog__text">
             &#34;Try our blog to find the best tips and tricks to select your
             gift&#34;
           </p>
           <div class="topblog__wrap">
-            <img
-              class="image"
-              src="./images/img-best-blog.jpg"
-              alt="a man in a white shirt rides a woman in a white dress on a swing, the woman has a bouquet of white flowers in her hands, they smile"
-              width="400"
-              height="370"
-            />
-            <p class="topblog__author">Mr. John Doe</p>
-            <p class="topblog__name">The best way to wish your wife</p>
-            <a class="link topblog__link" href="">Read More</a>
+            <div class="topblog__thumb">
+              <img
+                class="image"
+                srcset="
+                  images/img/img-best-blog-400.jpg      1x,
+                  images/img2x/img-best-blog@2x-800.jpg 2x
+                "
+                src="images/img/img-best-blog-400.jpg"
+                alt="a man in a white shirt rides a woman in a white dress on a swing, the woman has a bouquet of white flowers in her hands, they smile"
+              />
+            </div>
+            <div class="topblog__text-wrap">
+              <p class="topblog__author">Mr. John Doe</p>
+              <p class="topblog__blogtitle">The best way to wish your wife</p>
+              <a class="link topblog__link" href="">Read More</a>
+            </div>
           </div>
 
           <!-- == Description of database and mechanism == -->
           <ul class="list how-it-works">
             <li class="how-it-works__item">
-              <h3 class="how-it-works__heading">
+              <h3 class="how-it-works__title">
                 Database to find the gifts for your girlfriend
               </h3>
               <p class="how-it-works__excerpt">
@@ -284,7 +300,7 @@
               <a class="link how-it-works__link" href="">Read More</a>
             </li>
             <li class="how-it-works__item">
-              <h3 class="how-it-works__heading">
+              <h3 class="how-it-works__title">
                 How Artificial Intelligence read your mind to find the best gift
               </h3>
               <p class="how-it-works__excerpt">
