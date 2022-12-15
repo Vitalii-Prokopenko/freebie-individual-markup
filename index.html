@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- === PAGE HEADER === -->
@@ -84,7 +85,13 @@
       <section class="page-section hero">
         <div class="container hero-container">
           <h1 class="visually-hidden">Gift store</h1>
-          <div class="hero__description">
+          <div
+            class="hero__description"
+            data-aos="fade-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div class="hero__title-wrap">
               <h2 class="hero__title">
                 Find a gift for your wife or girlfriend
@@ -101,7 +108,12 @@
               find gift now
             </button>
           </div>
-          <div class="hero__thumb">
+          <div
+            class="hero__thumb"
+            data-aos="fade-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <img
               class="image"
               srcset="
@@ -117,9 +129,15 @@
 
       <!-- == Feature == -->
 
-      <section class="page-section feature">
+      <section class="page-section feature" data-aos="fade-right">
         <div class="container feature-container">
-          <div class="feature__description">
+          <div
+            class="feature__description"
+            data-aos="fade-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div class="feature__title-wrap">
               <h2 class="feature__title">How we work</h2>
               <p class="feature__text">
@@ -133,7 +151,12 @@
               learn More
             </button>
           </div>
-          <div class="feature__thumb">
+          <div
+            class="feature__thumb"
+            data-aos="fade-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <img
               class="image"
               srcset="
@@ -156,7 +179,13 @@
             &#34;Try our web app to find the best gifts for all occasions&#34;
           </p>
           <ul class="list tall__list">
-            <li class="tall__item card">
+            <li
+              class="tall__item card"
+              class="posts-item"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="card__thumb">
                 <img
                   class="image card__img"
@@ -173,7 +202,13 @@
                 </div>
               </div>
             </li>
-            <li class="tall__item card">
+            <li
+              class="tall__item card"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="750"
+            >
               <div class="card__thumb">
                 <img
                   class="image card__img"
@@ -190,7 +225,13 @@
                 </div>
               </div>
             </li>
-            <li class="tall__item card">
+            <li
+              class="tall__item card"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="1000"
+            >
               <div class="card__thumb">
                 <img
                   class="image card__img"
@@ -207,7 +248,13 @@
                 </div>
               </div>
             </li>
-            <li class="tall__item card">
+            <li
+              class="tall__item card"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="500"
+            >
               <div class="card__thumb">
                 <img
                   class="image card__img"
@@ -232,11 +279,21 @@
 
       <section class="page-section cta">
         <div class="container cta-container">
-          <div class="cta__text-wrap">
+          <div
+            class="cta__text-wrap"
+            data-aos="fade-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500"
+          >
             <b class="cta__bold-text">Ready to get started?</b>
             <p class="cta__text">Sign up or contact us</p>
           </div>
-          <ul class="list cta__list">
+          <ul
+            class="list cta__list"
+            data-aos="fade-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500"
+          >
             <li class="cta__item">
               <button
                 class="btn btn-gift-finder btn-gift-finder--cta"
@@ -269,7 +326,14 @@
             gift&#34;
           </p>
           <div class="topblog__wrap">
-            <div class="topblog__thumb">
+            <div
+              class="topblog__thumb"
+              width="400"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500"
+              data-aos-delay="1000"
+            >
               <img
                 class="image"
                 srcset="
@@ -280,7 +344,13 @@
                 alt="a man in a white shirt rides a woman in a white dress on a swing, the woman has a bouquet of white flowers in her hands, they smile"
               />
             </div>
-            <div class="topblog__text-wrap">
+            <div
+              class="topblog__text-wrap"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500"
+              data-aos-delay="1000"
+            >
               <p class="topblog__author">Mr. John Doe</p>
               <p class="topblog__blogtitle">The best way to wish your wife</p>
               <a class="link topblog__link" href="">Read More</a>
@@ -289,7 +359,13 @@
 
           <!-- == Description of database and mechanism == -->
           <ul class="list how-it-works">
-            <li class="how-it-works__item">
+            <li
+              class="how-it-works__item"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
               <h3 class="how-it-works__title">
                 Database to find the gifts for your girlfriend
               </h3>
@@ -299,7 +375,13 @@
               </p>
               <a class="link how-it-works__link" href="">Read More</a>
             </li>
-            <li class="how-it-works__item">
+            <li
+              class="how-it-works__item"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+            >
               <h3 class="how-it-works__title">
                 How Artificial Intelligence read your mind to find the best gift
               </h3>
@@ -395,7 +477,12 @@
         <div class="footer__nav-wrap">
           <!-- == Main menu left part == -->
 
-          <ul class="list page-nav__list left-list footer__nav-list">
+          <ul
+            class="list page-nav__list left-list footer__nav-list"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="1000"
+          >
             <li class="page-nav__item footer__nav-item">
               <a class="link page-nav__link footer__nav-link" href="#">Home</a>
             </li>
@@ -412,7 +499,12 @@
 
           <!-- == Main menu right part == -->
 
-          <ul class="list page-nav__list right-list footer__nav-list">
+          <ul
+            class="list page-nav__list right-list footer__nav-list"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="1000"
+          >
             <li class="page-nav__item footer__nav-item">
               <a class="link page-nav__link footer__nav-link" href="#"
                 >Services</a
@@ -427,35 +519,65 @@
         <!-- == Social links == -->
 
         <ul class="list social-links footer__social-links">
-          <li class="social-links__item footer__social-links-item">
+          <li
+            class="social-links__item footer__social-links-item"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <a class="link social-link footer__social-link" href="#">
               <svg class="social-link__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item footer__social-links-item">
+          <li
+            class="social-links__item footer__social-links-item"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <a class="link social-link footer__social-link" href="#">
               <svg class="social-link__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item footer__social-links-item">
+          <li
+            class="social-links__item footer__social-links-item"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <a class="link social-link footer__social-link" href="#">
               <svg class="social-link__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item footer__social-links-item">
+          <li
+            class="social-links__item footer__social-links-item"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <a class="link social-link footer__social-link" href="#">
               <svg class="social-link__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
-          <li class="social-links__item footer__social-links-item">
+          <li
+            class="social-links__item footer__social-links-item"
+            data-aos="flip-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <a class="link social-link footer__social-link" href="#">
               <svg class="social-link__icon">
                 <use href="./images/icons/symbol-defs.svg#icon-pinterest"></use>
@@ -484,5 +606,9 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
