@@ -1,0 +1,58 @@
+/* === Footer === */
+
+.footer {
+  padding-top: 50px;
+  @include tablet-and-desktop(padding-top, 100px);
+
+  background-color: $bgColorHeaderFooter;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    &__nav-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+      width: 290px;
+
+      @include only-tablet(width, 638px);
+      @include only-desktop(width, 1000px);
+
+    border-bottom: 1px solid $mainColor;
+  }
+
+  &__nav-list {
+    margin-bottom: 38px;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include tablet-and-desktop(margin-bottom, 0);
+    @include only-tablet(margin-right, 54px);
+    @include only-desktop(margin-right, 81px);
+  }
+
+  &__nav-link {
+    padding: 15px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+
+    color: $mainColor;
+  }
+}
+
+.left-list {
+  text-align: left;
+}
+
+.right-list {
+  text-align: right;
+}
