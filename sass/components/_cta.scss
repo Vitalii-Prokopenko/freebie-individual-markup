@@ -1,0 +1,41 @@
+/* == CTA section == */
+
+.cta {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  background-color: $accentColor;
+
+  &__text-wrap {
+    margin-bottom: 20px;
+  }
+
+  &__bold-text,
+  &__text {
+    font-size: 26px;
+    line-height: calc(38 / 26);
+
+    color: $mainColor;
+
+//  font-size: 32px;
+//     line-height: calc(45 / 32);
+
+  }
+
+  &__bold-text {
+    font-weight: 700;
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+
+&__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+}

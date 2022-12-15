@@ -33,3 +33,7 @@
      #{$property}: $value;
   }
 }
+
+@mixin button-border($btnBorderColor) {
+  border: 1px solid $btnBorderColor;
+}

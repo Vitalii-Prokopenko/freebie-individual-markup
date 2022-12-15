@@ -13,13 +13,9 @@
   margin: -1px;
 }
 
-.feature__btn, .btn-gift-finder {
+.btn-how-it-works, .btn-gift-finder {
   padding: 0;
-  width: 200px;
-  height: 60px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2222222222;
   text-transform: uppercase;
   text-align: center;
   color: #f7941e;
@@ -96,6 +92,10 @@ h6 {
 
 /* == Button in header == */
 .btn-gift-finder {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 1.2222222222;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,7 +107,6 @@ h6 {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #f7941e;
 }
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn-gift-finder--header {
     width: 100px;
@@ -155,7 +154,6 @@ h6 {
     height: 44px;
   }
 }
-
 .btn-gift-finder--hero {
   color: #ffffff;
   background-color: #f7941e;
@@ -195,43 +193,53 @@ h6 {
   background-color: #ffffff;
 }
 
-.feature__btn {
+.btn-how-it-works {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .feature__btn {
+  .btn-how-it-works {
     width: 140px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .feature__btn {
+  .btn-how-it-works {
     height: 40px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .feature__btn {
+  .btn-how-it-works {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .feature__btn {
+  .btn-how-it-works {
     line-height: 1.1428571429;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature__btn {
+  .btn-how-it-works {
     width: 180px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .feature__btn {
+  .btn-how-it-works {
     height: 44px;
   }
 }
-.feature__btn:hover, .feature__btn:focus {
+@media screen and (min-width: 1200px) {
+  .btn-how-it-works {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-how-it-works {
+    height: 60px;
+  }
+}
+.btn-how-it-works:hover, .btn-how-it-works:focus {
   color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -881,4 +889,34 @@ h6 {
 }
 .card__link:hover, .card__link:focus {
   color: #f7941e;
+}
+
+/* == CTA section == */
+.cta {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #f7941e;
+}
+.cta__text-wrap {
+  margin-bottom: 20px;
+}
+.cta__bold-text, .cta__text {
+  font-size: 26px;
+  line-height: 1.4615384615;
+  color: #000000;
+}
+.cta__bold-text {
+  font-weight: 700;
+}
+.cta__text {
+  font-weight: 400;
+}
+.cta__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }/*# sourceMappingURL=main.css.map */
