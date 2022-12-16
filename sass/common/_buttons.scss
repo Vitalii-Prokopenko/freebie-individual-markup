@@ -1,14 +1,9 @@
-/* == Button in header == */
+/* == BUTTONS == */
+
+/* == Gift finder button == */ 
 
 .btn-gift-finder {
   @extend %btn-common;
-
-  // width: 200px;
-  // height: 60px;
-  // font-size: 18px;
-  // line-height: calc(22 / 18);
-  // color: $accentColor;
-  // background-color: transparent;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -21,6 +16,8 @@
     background-color: $accentColor;
   }
 
+  // Modificator for button in header
+
   &--header {
     @include only-mobile(width, 100px);
     @include only-mobile(height, 30px);
@@ -29,11 +26,14 @@
     @include only-mobile(text-transform, capitalize);
 
     @include only-desktop(flex-basis, 12.5%);
+
     @include only-tablet(flex-basis, 20%);
 
     @include tablet-and-desktop(width, 150px);
     @include tablet-and-desktop(height, 44px);
   }
+
+// Modificator for button in hero
 
   &--hero {
     color: $reverseColor;
@@ -53,6 +53,8 @@
       background-color: $reverseColor;
     }
   }
+
+  // Modificator for button in cta
 
   &--cta {
     color: $reverseColor;
@@ -74,6 +76,8 @@
   }
 }
 
+/* == How it works button == */ 
+
 .btn-how-it-works {
   @extend %btn-common;
 
@@ -93,17 +97,16 @@
 
   &:hover,
   &:focus {
-    // color: $mainColor;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: $reverseColor;
   }
+
+  // Modificator for button in cta
 
   &--cta {
     color: $mainColor;
     @include button-border($mainColor);
-    // color: $reverseColor;
-    // background-color: $mainColor;
-
+    
     @include only-mobile(width, 140px);
     @include only-mobile(height, 40px);
     @include only-mobile(font-size, 14px);
