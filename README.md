@@ -11,6 +11,5 @@ WTAT SHOULD BE ADDED (still for practicing):
 
 WHAT BUGS ARE STILL THERE TO BE FIXED:
 1. The mobile menu does not close by itself after selecting a menu item.
-2. Images do not load on a mobile phone (iPhone 11).
 
 Comments and suggestions are welcomed.
