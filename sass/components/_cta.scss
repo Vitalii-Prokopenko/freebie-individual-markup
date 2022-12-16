@@ -1,5 +1,6 @@
-/* == CTA section == */
+/* == CTA SECTION == */
 
+/* Section */
 .cta {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -8,7 +9,10 @@
   background-color: $accentColor;
 
   @include only-tablet(padding, 52px 0);
+
   @include only-desktop(padding, 82px 0);
+
+  /* CTA container */
 
   &-container {
     @include tablet-and-desktop(display, flex);
@@ -16,8 +20,11 @@
     @include tablet-and-desktop(align-items, center);
 
     @include only-tablet(padding, 0 45px);
+
     @include only-desktop(padding, 0 115px);
   }
+
+  /* Text in CTA */
 
   &__text-wrap {
     margin-bottom: 20px;
@@ -31,9 +38,6 @@
     line-height: calc(38 / 26);
 
     color: $mainColor;
-
-    //  font-size: 32px;
-    //     line-height: calc(45 / 32);
   }
 
   &__bold-text {
@@ -43,6 +47,8 @@
   &__text {
     font-weight: 400;
   }
+
+  /* Buttons in CTA */
 
   &__list {
     display: flex;

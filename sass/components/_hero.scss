@@ -1,25 +1,22 @@
-/* === SECTION HERO === */
+/* == SECTION HERO == */
 
-// .page-section {
-//   width: 1440px;
-//   margin: 0 auto;
-// }
-
-// .hero-section {
-//   display: flex;
-//   justify-content: center;
-// }
+/* Section */
 
 .hero {
   background-color: $bgSecondColor;
+
+  /* Hero container */
 
   &-container {
     display: flex;
     padding: 0;
 
     @include only-mobile(flex-direction, column-reverse);
+
     @include tablet-and-desktop(justify-content, space-between);
   }
+
+  /* Thumb for img */
 
   &__thumb {
     width: 320px;
@@ -31,14 +28,11 @@
     @include only-desktop(width, 600px);
   }
 
+  /* Text in hero */
+
   &__description {
     margin: 0 auto;
     padding: 0 20px 20px;
-
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
 
     text-align: center;
 
@@ -53,24 +47,14 @@
     @include tablet-and-desktop(justify-content, space-between);
     @include tablet-and-desktop(align-items, left);
     @include tablet-and-desktop(text-align, left);
-
-    // padding-left: 162px;
-    // padding-top: 154px;
-    // width: 721px;
   }
 
   &__title {
-    // margin-bottom: 36px;
-    // width: 433px;
-
     margin-bottom: 20px;
 
     font-weight: 700;
     font-size: 32px;
     line-height: calc(36 / 32);
-
-    // font-size: 56px;
-    // line-height: calc(66 / 56);
 
     color: $mainColor;
 
@@ -85,37 +69,11 @@
     font-size: 16px;
     line-height: calc(20 / 16);
 
-    // margin-bottom: 52px;
-    // width: 422px;
-
-    // font-size: 20px;
-    // line-height: calc(28 / 20);
-
     color: $mainColor;
 
-    
     @include only-desktop(font-size, 20px);
     @include only-desktop(line-height, calc(28 / 20));
 
     @include tablet-and-desktop(margin-bottom, auto);
   }
 }
-
-// .btn-hero-gift-finder {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   width: 200px;
-//   height: 60px;
-
-//   font-weight: 400;
-//   font-size: 18px;
-//   line-height: calc(21 / 18);
-//   text-transform: uppercase;
-
-//   color: var(--reverse-color);
-//   background-color: var(--accent-color);
-//   border-radius: 5px;
-//   border-color: transparent;
-// }

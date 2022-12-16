@@ -429,7 +429,8 @@ h6 {
   }
 }
 
-/* === HEADER === */
+/* == HEADER == */
+/* Section */
 .page-header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -457,6 +458,7 @@ h6 {
   }
 }
 
+/* Header container */
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,9 +671,13 @@ h6 {
   margin-right: 20px;
 }
 
-/* === SECTION HERO === */
+/* == SECTION HERO == */
+/* Section */
 .hero {
   background-color: #F1F1F2;
+  /* Hero container */
+  /* Thumb for img */
+  /* Text in hero */
 }
 .hero-container {
   display: -webkit-box;
@@ -811,9 +817,13 @@ h6 {
   }
 }
 
-/* === SECTION FEATURE === */
+/* === FEATURE SECTION === */
+/* Section */
 .feature {
   background-color: #F1F1F2;
+  /* Feature container */
+  /* Thumb for img */
+  /* Text in feature section */
 }
 .feature-container {
   display: -webkit-box;
@@ -1119,12 +1129,16 @@ h6 {
   color: #f7941e;
 }
 
-/* == CTA section == */
+/* == CTA SECTION == */
+/* Section */
 .cta {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   background-color: #f7941e;
+  /* CTA container */
+  /* Text in CTA */
+  /* Buttons in CTA */
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cta {
@@ -1424,11 +1438,15 @@ h6 {
   color: #f7941e;
 }
 
-/* === Footer === */
+/* == FOOTER == */
+/* Section */
 .footer {
   padding-top: 50px;
   padding-bottom: 35px;
   background-color: #FAFAFA;
+  /* Footer container */
+  /* Navigation in footer */
+  /* Social links in footer */
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -1515,6 +1533,7 @@ h6 {
 .footer__social-links-item:not(:last-child) {
   margin-right: 20px;
 }
+
 .left-list {
   text-align: left;
 }
@@ -1523,6 +1542,7 @@ h6 {
   text-align: right;
 }
 
+/* Author rights and privacy policy */
 .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
