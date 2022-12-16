@@ -33,7 +33,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 60px 40px 120px 40px;
   background-color: $accentColor;
   z-index: 999;
 
@@ -53,7 +53,7 @@
 }
 
 .mobile-menu {
-padding: 60px 40px;
+// padding: 60px 40px;
 
 display: flex;
 flex-direction: column;

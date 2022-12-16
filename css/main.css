@@ -577,7 +577,7 @@ h6 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 60px 40px 120px 40px;
   background-color: #f7941e;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -598,7 +598,6 @@ h6 {
 }
 
 .mobile-menu {
-  padding: 60px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
