@@ -2,4 +2,8 @@ body {
   font-family: $mainFont;
   color: $mainColor;
   background-color: $reverseColor;
+
+  @include less-then-mobile(display, none);
 }
+
+

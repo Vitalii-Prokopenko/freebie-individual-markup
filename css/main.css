@@ -68,6 +68,11 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+@media screen and (max-width: 319px) {
+  body {
+    display: none;
+  }
+}
 
 /* == Global styles reset == */
 p,

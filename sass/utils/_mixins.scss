@@ -34,6 +34,12 @@
   }
 }
 
+@mixin less-then-mobile($property, $value) {
+  @media screen and (max-width: calc($minMobile - 1px)) {
+     #{$property}: $value;
+  }
+}
+
 @mixin button-border($btnBorderColor) {
   border: 1px solid $btnBorderColor;
 }
