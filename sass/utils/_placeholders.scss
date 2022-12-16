@@ -1,4 +1,4 @@
-// Common styles of buttons
+/* Common styles of buttons */
 
 %btn-common {
   padding: 0;
@@ -17,7 +17,7 @@
   @include button-border($accentColor);
 }
 
-// Common styles for logo-link
+/* Common styles for logo-link */
 
 %logo-link {
   padding-top: 15px;
@@ -32,7 +32,7 @@
   @include only-mobile(line-height, calc(24 / 18));
 }
 
-// Common styles for social links
+/* Common styles for social links */
 
 %social-link-bg {
   width: 40px;

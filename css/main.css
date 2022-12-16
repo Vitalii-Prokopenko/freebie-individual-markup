@@ -13,6 +13,7 @@
   margin: -1px;
 }
 
+/* Common styles of buttons */
 .btn-how-it-works, .btn-gift-finder {
   padding: 0;
   width: 200px;
@@ -28,6 +29,7 @@
   border: 1px solid #f7941e;
 }
 
+/* Common styles for logo-link */
 .logo-link-footer, .logo-link-header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -47,6 +49,7 @@
   }
 }
 
+/* Common styles for social links */
 .social-link {
   width: 40px;
   height: 40px;
@@ -115,7 +118,8 @@ h6 {
   color: inherit;
 }
 
-/* == STYLES FOR COMMON ELEMENTS == */ /* Container */
+/* == STYLES FOR COMMON ELEMENTS == */
+/* Container */
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -471,7 +475,8 @@ h6 {
           justify-content: space-between;
 }
 
-/* == Logo == */
+/* == LOGO == */
+/* Logo in header */
 .logo-link-header {
   -ms-flex-preferred-size: 10%;
       flex-basis: 10%;
@@ -499,6 +504,7 @@ h6 {
           transform: scale(1.3);
 }
 
+/* Logo in footer */
 .logo-link-footer {
   color: #f7941e;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -512,6 +518,8 @@ h6 {
           transform: scale(1.3);
 }
 
+/* PAGE NAVIGATION */
+/* Navigation */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .page-nav {
     display: none;
@@ -580,6 +588,8 @@ h6 {
           transform: scale(1.3);
 }
 
+/* == MOBILE MENU == */
+/* Menu toggle */
 .menu-toggle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -606,6 +616,7 @@ h6 {
   fill: #ffffff;
 }
 
+/* Menu container */
 .menu-container {
   position: fixed;
   top: 0;
@@ -632,6 +643,7 @@ h6 {
   right: 15px;
 }
 
+/* Mobile menu */
 .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,12 +684,8 @@ h6 {
 }
 
 /* == SECTION HERO == */
-/* Section */
 .hero {
   background-color: #F1F1F2;
-  /* Hero container */
-  /* Thumb for img */
-  /* Text in hero */
 }
 .hero-container {
   display: -webkit-box;
@@ -818,12 +826,8 @@ h6 {
 }
 
 /* === FEATURE SECTION === */
-/* Section */
 .feature {
   background-color: #F1F1F2;
-  /* Feature container */
-  /* Thumb for img */
-  /* Text in feature section */
 }
 .feature-container {
   display: -webkit-box;
@@ -972,7 +976,7 @@ h6 {
   }
 }
 
-/* === SECTION POSTS TALL === */
+/* == POSTS TALL SECTION == */
 .tall {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1130,15 +1134,11 @@ h6 {
 }
 
 /* == CTA SECTION == */
-/* Section */
 .cta {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   background-color: #f7941e;
-  /* CTA container */
-  /* Text in CTA */
-  /* Buttons in CTA */
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cta {
@@ -1212,7 +1212,7 @@ h6 {
   margin-right: 16px;
 }
 
-/* == Top blog section == */
+/* == TOP BLOG SECTION == */
 .topblog {
   padding: 40px 0;
   text-align: center;
@@ -1349,6 +1349,7 @@ h6 {
   color: #f7941e;
 }
 
+/* How it works subsection */
 @media screen and (min-width: 768px) {
   .how-it-works {
     display: -webkit-box;
@@ -1439,14 +1440,10 @@ h6 {
 }
 
 /* == FOOTER == */
-/* Section */
 .footer {
   padding-top: 50px;
   padding-bottom: 35px;
   background-color: #FAFAFA;
-  /* Footer container */
-  /* Navigation in footer */
-  /* Social links in footer */
 }
 @media screen and (min-width: 768px) {
   .footer {

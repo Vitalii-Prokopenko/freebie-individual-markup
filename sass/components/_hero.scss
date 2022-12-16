@@ -1,11 +1,9 @@
 /* == SECTION HERO == */
 
-/* Section */
-
 .hero {
   background-color: $bgSecondColor;
 
-  /* Hero container */
+  // Hero container
 
   &-container {
     display: flex;
@@ -16,7 +14,7 @@
     @include tablet-and-desktop(justify-content, space-between);
   }
 
-  /* Thumb for img */
+  // Thumb for img
 
   &__thumb {
     width: 320px;
@@ -28,7 +26,7 @@
     @include only-desktop(width, 600px);
   }
 
-  /* Text in hero */
+  // Text in hero
 
   &__description {
     margin: 0 auto;

@@ -1,26 +1,16 @@
-/* == Logo == */
+/* == LOGO == */
+
+/* Logo in header */
 
 .logo-link-header {
   @extend %logo-link;
 
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-
   flex-basis: 10%;
-
-  // font-family: $logoFont;
-  // font-weight: 400;
-  // font-size: 26px;
-  // line-height: calc(39 / 26);
-  // text-align: center;
 
   color: $logoColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  // @include only-mobile(font-size, 18px);
-  // @include only-mobile(line-height, calc(24 / 18));
 
   @include only-tablet(flex-basis, 19%);
 
@@ -33,31 +23,15 @@
   }
 }
 
+/* Logo in footer */
+
 .logo-link-footer {
   @extend %logo-link;
-
-  // padding-top: 15px;
-  // padding-bottom: 15px;
-
-  // flex-basis: 10%;
-
-  // font-family: $logoFont;
-  // font-weight: 400;
-  // font-size: 26px;
-  // line-height: calc(39 / 26);
-  // text-align: center;
 
   color: $accentColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  // @include only-mobile(font-size, 18px);
-  // @include only-mobile(line-height, calc(24 / 18));
-
-  // @include only-tablet(flex-basis, 19%);
-
-  // @include only-desktop(flex-basis, 12%);
 
   &:hover,
   &:focus {

@@ -1,11 +1,9 @@
 /* === FEATURE SECTION === */
 
-/* Section */
-
 .feature {
   background-color: $bgSecondColor;
 
-  /* Feature container */
+  // Feature container
 
   &-container {
     display: flex;
@@ -17,7 +15,7 @@
     @include tablet-and-desktop(justify-content, space-between);
   }
 
-  /* Thumb for img */
+  // Thumb for img
 
   &__thumb {
     width: 320px;
@@ -29,7 +27,7 @@
     @include only-desktop(width, 600px);
   }
 
-  /* Text in feature section */
+  // Text in feature section
 
   &__description {
     margin: 0 auto;

@@ -1,7 +1,5 @@
 /* == FOOTER == */
 
-/* Section */
-
 .footer {
   padding-top: 50px;
   padding-bottom: 35px;
@@ -10,7 +8,7 @@
 
   background-color: $bgColorHeaderFooter;
 
-  /* Footer container */
+  // Footer container
 
   &-container {
     display: flex;
@@ -19,7 +17,7 @@
     align-items: center;
   }
 
-  /* Navigation in footer */
+  // Navigation in footer
 
   &__nav-wrap {
     margin-bottom: 38px;
@@ -61,7 +59,7 @@
     color: $mainColor;
   }
 
-  /* Social links in footer */
+  // Social links in footer
 
   &__social-links {
     margin-bottom: 40px;

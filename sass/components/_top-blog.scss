@@ -1,4 +1,4 @@
-/* == Top blog section == */
+/* == TOP BLOG SECTION == */
 
 .topblog {
   padding: 40px 0;
@@ -10,9 +10,13 @@
 
   @include only-desktop(padding, 86px 0 82px);
 
+  // Top blog container
+
   &-container {
     padding: 0;
   }
+
+  // Titles
 
   &__title {
     margin-bottom: 15px;
@@ -34,15 +38,17 @@
     background-color: $mainColor;
   }
 
+  // Thumb for img
+
   &__thumb {
     width: 320px;
-
-    // @include only-mobile(margin-bottom, 30px);
 
     @include only-tablet(width, 312px);
 
     @include only-desktop(width, 600px);
   }
+
+  // Text
 
   &__text-wrap {
     padding: 30px 15px;
@@ -50,9 +56,10 @@
     @include only-tablet(display, flex);
     @include only-tablet(flex-direction, column);
     @include only-tablet(justify-content, space-between);
-
     @include only-tablet(padding, 25px 100px 25px 45px);
+
     @include only-desktop(padding, 63px 200px 49px 78px);
+
     @include tablet-and-desktop(text-align, left);
   }
 
@@ -74,7 +81,6 @@
 
     @include only-tablet(margin-bottom, auto);
 
-
     font-size: 35px;
     line-height: calc(45 / 35);
 
@@ -95,6 +101,8 @@
   }
 }
 
+/* How it works subsection */
+
 .how-it-works {
   @include tablet-and-desktop(display, flex);
 
@@ -104,7 +112,6 @@
     @include tablet-and-desktop(display, flex);
     @include tablet-and-desktop(flex-direction, column);
     @include tablet-and-desktop(justify-content, space-between);
-    // @include tablet-and-desktop(align-items, left);
 
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 
@@ -122,13 +129,6 @@
     @include tablet-and-desktop(margin-bottom, 0);
     @include tablet-and-desktop(margin-right, 30px);
   }
-
-  //   &__title,
-  //   &__excerpt
-  //   {
-  //     margin-bottom: 16px;
-  //     // text-align: left;
-  //   }
 
   &__title {
     margin-bottom: 16px;

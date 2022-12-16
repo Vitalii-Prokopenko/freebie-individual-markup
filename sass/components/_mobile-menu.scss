@@ -1,6 +1,6 @@
-// /* == Mobile menu == */
+/* == MOBILE MENU == */
 
-// Menu toggle
+/* Menu toggle */
 
 .menu-toggle {
   display: inline-flex;
@@ -11,7 +11,7 @@
 
   @include tablet-and-desktop(display, none);
 
-   &__icon {
+  &__icon {
     fill: $mainColor;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,6 +27,8 @@
   }
 }
 
+/* Menu container */
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -41,7 +43,7 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &.is-open {
+  &.is-open {
     transform: translateX(0);
   }
 
@@ -52,45 +54,41 @@
   }
 }
 
+/* Mobile menu */
+
 .mobile-menu {
-// padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  &__list {
+    margin-bottom: auto;
 
+    width: 50vw;
+  }
 
-&__list {
-margin-bottom: auto;
+  &__link {
+    padding: 15px 0;
 
-  width: 50vw;
-}
+    font-size: 38px;
+    line-height: calc(44 / 38);
 
-&__link {
-padding: 15px 0;
+    color: $mainColor;
 
-  font-size: 38px;
-  line-height: calc(44 / 38);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  color: $mainColor;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $reverseColor;
-      }
-}
+    &:hover,
+    &:focus {
+      color: $reverseColor;
+    }
+  }
 
   &__social-links {
-    display:flex;
+    display: flex;
     justify-content: center;
-
-    
   }
 
   &__item:not(:last-child) {
-      margin-right: 20px;
-    }
-
-    }
+    margin-right: 20px;
+  }
+}

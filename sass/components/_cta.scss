@@ -1,6 +1,5 @@
 /* == CTA SECTION == */
 
-/* Section */
 .cta {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -12,7 +11,7 @@
 
   @include only-desktop(padding, 82px 0);
 
-  /* CTA container */
+  // CTA container
 
   &-container {
     @include tablet-and-desktop(display, flex);
@@ -24,7 +23,7 @@
     @include only-desktop(padding, 0 115px);
   }
 
-  /* Text in CTA */
+  // Text in CTA
 
   &__text-wrap {
     margin-bottom: 20px;
@@ -48,7 +47,7 @@
     font-weight: 400;
   }
 
-  /* Buttons in CTA */
+  // Buttons in CTA
 
   &__list {
     display: flex;
