@@ -1,15 +1,33 @@
-# gift-store
+# Landing page for gift store
 
-The repository stores the files of an additional project that I performed by myself while studying the HTML+CSS 1.0 course on Full Stack Developer FSOn 72 programm at GoIt school.
-The template Figma file is in the folder "template".
-Styles for tablet and mobile phone are written by me additionally to consolidate the acquired knowledge.
-The animation on scroll is an additional feature as well (https://michalsnik.github.io/aos/).
+**_mobile and tablet version are not specified in template and designed by myself_**
 
-WTAT SHOULD BE ADDED (still for practicing):
-1. Modal windows for displaying content after clicking buttons.
-2. A slider for the posts-tall section.
+### Versions:
++ #mobile 320px
++ #tablet 768px
++ #desktop 1200px
 
-WHAT BUGS ARE STILL THERE TO BE FIXED:
-1. The mobile menu does not close by itself after selecting a menu item.
+### Used technologies:
 
-Comments and suggestions are welcomed.
++ HTML 5.0
++ CSS 3.0
++ JavaScript
++ SASS
++ BEM
++ Mobile first
++ Animation-on-scroll (https://michalsnik.github.io/aos/)
+
+### Template:
+![template screenshot](/template/template-screenshot1.jpg)
+
+### Lighthouse results:
+
+#### Desktop:
++ Accessibility - 
++ Best practices - 
++ SEO - 
+
+#### Mobile:
++ Accessibility - 
++ Best practices - 
++ SEO - 
