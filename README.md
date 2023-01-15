@@ -23,11 +23,11 @@
 ### Lighthouse results:
 
 #### Desktop:
-+ Accessibility - 
-+ Best practices - 
-+ SEO - 
++ Accessibility - 97%
++ Best practices - 92%
++ SEO - 90%
 
 #### Mobile:
-+ Accessibility - 
-+ Best practices - 
-+ SEO - 
++ Accessibility - 97%
++ Best practices - 92%
++ SEO - 92%
